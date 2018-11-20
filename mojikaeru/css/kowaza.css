@@ -1,0 +1,264 @@
+@charset "utf-8";
+
+/*三角 CSSで作る */
+body{
+    background-color: #fff;
+}
+.triangle{
+width: 0;
+height: 0;
+border-left: 30px solid transparent;
+border-right: 30px solid transparent;
+border-bottom: 30px solid black;
+}
+.triangle1{
+width: 0;
+height: 0;
+border-left: 30px solid black;
+border-top: 30px solid transparent;
+border-bottom: 30px solid transparent;
+}
+.triangle2{
+width: 0;
+height: 0;
+border-top: 30px solid transparent;
+border-right: 30px solid black;
+border-bottom: 30px solid transparent;
+}
+.triangle3{
+width: 0;
+height: 0;
+border-left: 30px solid transparent;
+border-right: 30px solid transparent;
+border-top: 30px solid black;
+}
+/*>>>のほう*/
+.arrow{
+width: 30px;
+height: 30px;
+border: 5px solid;
+border-color: #565656 #565656 transparent transparent;
+transform: rotate(45deg);
+}
+.arrow1{
+width: 500px;
+height: 500px;
+border: 1px solid;
+border-color:  transparent transparent #565656 #565656;
+transform: rotate(-45deg);
+}
+.arrow2{
+width: 30px;
+height: 30px;
+border: 5px solid;
+border-color: #565656 #565656 transparent transparent;
+transform: rotate(-45deg);
+}
+.arrow3{
+width: 30px;
+height: 30px;
+border: 5px solid;
+border-color:  transparent transparent #565656 #565656;
+transform: rotate(45deg);
+}
+
+.sankaku{
+        width: 0;
+        height: 0;
+        border-top: 30px solid #f00;
+        border-right: 80px solid transparent;
+        border-bottom: 30px solid transparent;
+        border-left: 80px solid transparent;
+}
+
+/*--------------------------------------------*/
+.hukidasi{
+        width: 300px;
+        margin: 0 auto;
+        padding: 8px 0;
+        border: 1px solid #aaa;
+        border-radius: 12px;
+        text-align: center;
+        position: relative;
+}
+.hukidasi:before{
+        content: "";
+        border: 12px solid transparent;
+        border-top: 12px solid #fff;
+        position: absolute;
+        right: 30%;
+        bottom: -23px;
+}
+.hukidasi:after{
+        content: "";
+        border: 12px solid transparent;
+        border-top: 12px solid #aaa;
+        position: absolute;
+        right: 30%;
+        bottom: -24px;
+}
+/*--------------------------------------------*/
+
+.balloon3-right-btm {
+        position: relative;
+        display: inline-block;
+        margin: 1.5em 15px 1.5em 0;
+        padding: 0 5px;
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        vertical-align: middle;
+        text-align: center;
+        color: #FFF;
+        font-size: 20px;
+        font-weight: bold;
+        background: #a58eff;
+        border-radius: 50%;
+        box-sizing: border-box;
+}
+
+.balloon3-right-btm:before{
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        right: -8px;
+        margin-top: -15px;
+        border: 15px solid transparent;
+        border-left: 15px solid #a58eff;
+        z-index: 0;
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+/*--------------------------------------------*/
+
+.balloon5 {
+    width: 100%;
+    margin: 1.5em 0;
+    overflow: hidden;
+}
+
+.balloon5 .faceicon {
+    float: left;
+    margin-right: -90px;
+    width: 80px;
+}
+
+.balloon5 .faceicon img{
+    width: 100%;
+    height: auto;
+    border: solid 3px #d7ebfe;
+    border-radius: 50%;
+}
+
+.balloon5 .chatting {
+    width: 100%;
+}
+
+.says {
+    display: inline-block;
+    position: relative;
+    margin: 5px 0 0 105px;
+    padding: 17px 13px;
+    border-radius: 12px;
+    background: #d7ebfe;
+}
+
+.says:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    left: -24px;
+    border: 12px solid transparent;
+    border-right: 12px solid #d7ebfe;
+}
+
+.says p {
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------------------------------------*/
+.balloon1 {
+        position: relative;
+        display: inline-block;
+        margin: 1.5em 0;
+        padding: 7px 10px;
+        min-width: 120px;
+        max-width: 100%;
+        color: #555;
+        font-size: 16px;
+        background: #e0edff;
+        border-radius: 15px;
+}
+
+.balloon1:before{
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -15px;
+        border: 15px solid transparent;
+        border-top: 15px solid #e0edff;
+}
+
+.balloon1 p {
+        margin: 0;
+        padding: 0;
+}
+/*--------------------------------------------*/
+.balloon2:before{
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  margin-left: -15px;
+  border: 12px solid transparent;
+  border-top: 12px solid #FFF;
+  z-index: 2;
+}
+
+.balloon2:after{
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -17px;
+  border: 14px solid transparent;
+  border-top: 14px solid #555;
+  z-index: 1;
+}
+
+.balloon2 p {
+        margin: 0;
+        padding: 0;
+}
+
+
+/*--------------------------------------------*/
+.demo4 {
+        width: 100px;
+        height: 100px;
+        background-color: #ccc;
+        position: relative;
+        border: 4px solid #333;
+}
+.demo4:after, .demo4:before {
+        border: solid transparent;
+        content: ' ';
+        height: 0;
+        left: 100%;
+        position: absolute;
+        width: 0;
+}
+.demo4:after {
+        border-width: 9px;
+        border-left-color: #ccc;
+        top: 15px;
+}
+.demo4:before {
+        border-width: 14px;
+        border-left-color: #333;
+        top: 10px;
+}
+/*--------------------------------------------*/

@@ -1,0 +1,161 @@
+@charset "UTF-8";
+/*
+*
+* 上部固定のナビゲーションメニュー
+* advanced.css
+*
+*/
+/* =========================================================================
+  core
+========================================================================= */
+/* columns */
+.container, .nav {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* clearfix */
+.nav_list:after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  content: ".";
+  font-size: 0;
+}
+
+/* 初期設定
+--------------------------------------------------------- */
+/* ドキュメントのルート要素 */
+
+/* =========================================================================
+  layout
+========================================================================= */
+/* ページ共通スタイル
+--------------------------------------------------------- */
+/* container */
+.container {
+  background: #f5f5f4;
+}
+
+/* ナビゲーションのスタイル
+--------------------------------------------------------- */
+
+.nav {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  border-bottom: 2px solid #f5f5f4;
+  // box-shadow:;
+}
+
+.nav a {
+  color: #000;
+  text-decoration: none;
+  transition: .3s;
+}
+.nav a:hover {
+  color: #aaa;
+}
+
+.nav_list {
+  margin: 0;
+  padding: 0;
+  li {
+    float: left;
+    width: 12%;
+    height: 48px;
+    list-style-type: none;
+  }
+}
+
+.nav_link-logo {
+  margin: 0;
+  width: 15%;
+  padding: 0;
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+}
+.nav_list li:nth-child(1) {
+  margin: 0 10px;
+  padding: 0;
+}
+
+.nav_list li:last-child {
+  float:right;
+  background-color: #000;
+}
+.nav_link-login a {
+  color: #fff;
+}
+
+.nav_link {
+  display: block;
+  height: 14px;
+  margin: 0;
+  padding: 17px 0 13px;
+  color: #333333;
+  cursor: pointer;
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 1.0;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.nav_link-member {
+  padding-top: 10px;
+  a {
+    display: inline-block;
+    color: #fff;
+    font-weight: normal;
+    background-color: #f8b551;
+    padding: 10px 30px;
+    margin-bottom: 5px;
+  a:hover {
+    color:#fff;
+    opacity: 0.7;
+    }
+  }
+}
+
+/*  ここからhero部分--------------------*/
+
+main {
+  margin: 0 auto;
+  clear: both;
+}
+.hero_top{
+  width: 100%;
+  border-bottom: 1px solid #bbb;
+}
+
+/*//hero 左側*/
+.hero_left {
+  margin:30px 0 0 0;
+  padding:0 30px;
+  width: 60%;
+  height: 550px;
+  float:left;
+  font-size: 38px;
+  p {
+    margin: 0;
+  }
+}
+
+
+/*//hero 右側*/
+.hero_right {
+  margin: 0;
+  padding: 0;
+  width: 40%;
+  float: right;
+}
+.moji_animation {
+  font-family: "Sawarabi Mincho";
+  font-weight: bold;
+  font-size: 2rem;/*
+  padding-left: 70px;*/
+}

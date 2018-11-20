@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="　このサイトは、文字表記に関する指摘を通じて、文章を執筆・編集・校正する方を支援することを目的として開設しました。とくに校正を効率よく進めたいと考えている人に役立つサイトでありたいと考えています。書籍や論文を執筆される方はもちろん、一般の方にも日々の文章作成に利用していただければうれしいです。、">
+<meta name="keywords" content="校正,校閲,表記ゆれ,もじかえる,文字,オンライン,文章,論文作成,ブログ執筆">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<title>無料でブログ作成から論文をcheck・ オンライン表記チェックツール｜もじかえる</title>
+<link href="css/sanitize.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet"><!-- ズームしたりとかanimation効果 -->
+ <link  href="css/morphext.css" rel="stylesheet"><!-- 文字の切り替わり -->
+<link rel="shortcut icon" href="favicon.ico">
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"><!--icom表示-->
+<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700i" rel="stylesheet"><!-- 英文字フォント読み込み -->
+<link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" /><!--日本語フォント読み込み-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.inview.js"></script>
+<!-- inview.jsスクロールした時にアクションを起こすプラグイン -->
+<script src="js/jquery.drawsvg.js"></script><!-- svgアニメーション-->
+<script src="js/morphext.min.js"></script>
+<!-- marphext 文字が切り替わるアニメーション -->
+<script src="js/script.js"></script>
+<!-- jqueryスムーズスクロール -->
+<script>
+$(document).ready(function(){
+
+});
+</script>
+
+</head>
+<!--ここまでhead-->
+
+<body>
+  <!-- ナビゲーション -->
+
+  <header class="header" role="banner">
+    <!-- ここからサブナビゲーション -->
+<!--  <h1 class="pageTitle">Page title</h1> -->
+    <nav class="sub_nav">
+        <ul>
+            <li><a href="contact.html">ヘルプ・お問い合わせ</a></li>
+            <li><a href="#">もじかえる運営者</a></li>
+        </ul>
+    </nav><!-- .sub_nav -->
+    <!-- ここからメインナビゲーション -->
+    <nav id="fixed-nav" role="navigation" class="nav">
+      <ul class="nav_list">
+        <li class="nav_link nav_link-logo"><h1><a href="index.html"><img src="images/svg/logo01.svg" height="40" alt=""></a></h1></li>
+        <li class="nav_link nav_link-home"><a href="index.html">トップ</a></li>
+        <li class="nav_link nav_link-about"><a href="about.html">もじかえるとは</a></li>
+        <li class="nav_link nav_link-tool"><a href="#">無料チェックツール<i class="fas fa-angle-down"></i></a></li><!-- さらにドロップダウン -->
+         <li><a href="#info_t" class="nav_link nav_link-info">お知らせ</a></li>
+        <li class="nav_link nav_link-chargeplan"><a href="#">有料プラン</a></li>
+        <li class="nav_link nav_link-member"><a href="#">新規登録</a></li>
+        <li class="nav_link nav_link-login"><a href="#">ログイン</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main id="main" class="main">
+<div class="top_bg">
+    <div class="hero_top clearfix">
+            <p class="checktitle">伝えたい、いま、直したい。</p>
+        <div class="hero_left">
+            <p><strong>オンライン表記チェックツール</strong></p>
+            <p>コピーしてクリックだけで、校正・校閲</p>
+            <div class="mojititle"><p class="moji_animation">もじ<span id="js-rotating">&nbsp;&nbsp;&nbsp;, かえる, 蛙？？, かえる, 変える, 買える, かえる, 飼える, かえる, かえる</span>
+            <img src="images/frog_green02.png" alt="緑のにっこり笑ったカエル" width="100"></p>
+                </div>
+        </div><!-- /.hero_left -->
+        <div class="hero_right">
+            <div class="her_right_inner">
+                <p><strong>登録不要のもじかえるを</strong></p>
+                <a href="#" class="btn_hero">すぐに無料ではじめよう</a>
+                <p>フリープラン3000文字<br>ログイン不要でお試し</p>
+            </div>
+        </div><!-- /.hero_right -->
+    </div><!-- /.hero_top ヒーロー部分ここまで-->
+
+    <div class="freeCopy">
+        <h2>もじかえるは10万文字まで費用は0円<span class="br">
+            オンラインだから、その場で活用</span><span class="br">
+            いまチェックできます</span>
+        </h2>
+    </div><!-- /.freeCopy -->
+</div> <!-- /.top_bg -->
+
+<!-- ここから3つのプラン説明 -->
+<div class="plan_bg">
+    <img src="images/svg/tenten.svg" alt="色とりどりの三角" width="400">
+    <h2 class="black_h2">無料の３つのプラン<br><span>あなたに合うプランは？</span></h2>
+</div>
+<div id="effect" class="wrap">
+        <section class="plan free fadein">
+            <ul>
+                <li><h3>フリー<span>3000</span></h3></li>
+                <li><p>3000文字以内<br>ブログや日々作成する<br>短めの文章</p></li>
+                <li class="step1"><i class="mayicon-pccopy"></i><p>文章をブラウザに<br>コピー&ペースト</p></li>
+                <li class="arrowin"><div class="arrow"></div></li>
+                <li class="step1"><i class="mayicon-checkpc"></i><p>確定ボタンクリックで<br>数秒後にブラウザ表示</p></li>
+                <li><a href="#" class="btn_hero">今すぐお試し</a></li>
+            </ul>
+        </section>
+
+        <section class="plan regular fadein">
+            <ul>
+                <li><h3>レギュラー<span>50000</span></h3></li>
+                <li><p>5万文字以内<br>リポートなど<br>少し長めの文章</p></li>
+                <li class="step1"><i class="mayicon-pcfile"></i><p>文章のファイルを<br>ブラウザからアップロード<i class="fas fa-upload"></i><br><span>Word、PDFファイルに対応</span><p></li>
+                <li class="arrowin"><div class="arrow"></div></li>
+                <li class="step1"><i class="mayicon-pdfmail02"></i><p>数十秒後にメールで<br>PDFファイルをお届け</p></li>
+                <li><a href="#" class="btn_green">新規メール登録</a></li>
+            </ul>
+        </section>
+
+        <section class="plan pro fadein">
+            <ul>
+                <li><h3>プロフェッショナル<span>100000</span></h3></li>
+                <li><p>10万文字以内<br>書籍や論文の原稿など<br>長めの文章</p></li>
+                <li class="step2"><i class="mayicon-pcfile"></i><i class="mayicon-pdfmail02"></i><p>使い方はレギュラーと同じです</p></li>
+                <li class="arrow"></p></li>
+                <li><a href="#handbook">＜登録条件＞<br>記者ハンドブック<br>をお持ちの方<br><i class="fas fa-caret-down"></i></a></li>
+                <li><a href="#" class="btn_green">
+                新規メール登録</a></li>
+            </ul>
+        </section>
+            <p class="plan_attention">※何らかの理由でPDFが作成できない可能性があります。送られてきたPDFに指摘が表示されていない場合は、ご連絡ください。</p>
+            <div class="cplan_bann clearfix">
+                <div class="charge_gb">
+                    <img src="images/svg/cplan_bannar.svg" alt="有料プランのチェックのカスタマイズやサポートが充実" height="80">
+                </div>
+                <div class="charge_green">
+                    <a href="#" class="btn_cplan_bann">カスタマイズ、追加サポートが充実の有料プランはこちら</a>
+                </div>
+            </div>
+</div><!--/. wrap -->
+
+<div class="explantion_t">
+    <img src="images/svg/tenten.svg" alt="色とりどりの丸色とりどり三角" width="400">
+    <h2 class="black_h2 black_h2img">もじかえる<br>とは</h2>
+</div><!-- もじかえるとはタイトル/.explantion_t -->
+<div class="efficiency clearfix">
+    <h3 class="fadein">いつでも、校正を効率よく進められます</h3>
+    <div class="efficiency_inner fadein">
+        <p>「文章の確認」って意外と時間がかかりませんか？<br>もじかえるは「コピー＆ペースト」するだけで、文章をチェックできます。書籍や論文を執筆される方はもちろん、一般の方の日々の文章作成まで、簡単に校正することができるオンラインツールです。</p>
+        <a href="#" class="btn_orange">ログイン不要のフリープランをお試し</a>
+    </div>
+    <div class="sen">
+        <svg id="pcline_img" class="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 254 172">
+            <defs>
+                <style>.cls-1{fill:#fff;}
+                .cls-1,.cls-2,.cls-3{stroke:#61aa1a;stroke-linecap:round;stroke-linejoin:round; animation-iteration-count: 3;}
+                .cls-1,.cls-2{stroke-width:2px;}
+                .cls-2,.cls-3{fill:none;}.cls-3{stroke-width:16px;}
+                </style>
+            </defs>
+        <title>パソコン画面</title>
+        <polygon class="cls-1" points="11 6 11 144 24 144 24 17 231 17 231 144 245 144 245 6 11 6"/><polygon class="cls-1" points="240 171 226 171 10.75 171 1 159.5 1 150 1 150 253 150 253 150 253 158.75 240 171"/><polyline class="cls-2" points="112.75 108.75 143 78.28 172.34 108.75"/><polyline class="cls-2" points="120 116 120 139 164 139 164 116"/><polygon class="cls-2" points="151 126 151 126 134 126 134 126 134 112 134 112 151 112 151 112 151 126"/><rect class="cls-2" x="176" y="50" width="38" height="78"/><polygon class="cls-2" points="188.62 70 181.87 70 181.87 70 188.62 70 188.62 70"/><line class="cls-2" x1="188" y1="70" x2="188" y2="61"/><polygon class="cls-2" points="209.35 70 202.6 70 202.6 70 209.35 70 209.35 70"/><line class="cls-2" x1="209" y1="68" x2="209" y2="60"/><polygon class="cls-2" points="199.57 70 192.81 70 192.81 70 199.57 70 199.57 70"/><line class="cls-2" x1="199" y1="68" x2="199" y2="60"/><polygon class="cls-2" points="199.22 82 192.46 82 192.46 82 199.22 82 199.22 82"/><line class="cls-2" x1="199" y1="82" x2="199" y2="74"/><polygon class="cls-2" points="209 82 202.25 82 202.25 82 209 82 209 82"/><line class="cls-2" x1="209" y1="82" x2="209" y2="73"/><polygon class="cls-2" points="200.27 98 193.51 98 193.51 98 200.27 98 200.27 98"/><line class="cls-2" x1="200" y1="97" x2="200" y2="90"/><polygon class="cls-2" points="199.92 111 193.16 111 193.16 111 199.92 111 199.92 111"/><line class="cls-2" x1="200" y1="111" x2="200" y2="102"/><polygon class="cls-2" points="209.35 98 202.6 98 202.6 98 209.35 98 209.35 98"/><line class="cls-2" x1="209" y1="97" x2="209" y2="90"/><polygon class="cls-2" points="210.4 111 203.65 111 203.65 111 210.4 111 210.4 111"/><line class="cls-2" x1="210" y1="111" x2="210" y2="102"/><polygon class="cls-2" points="188.62 84 181.87 84 181.87 84 188.62 84 188.62 84"/><line class="cls-2" x1="188" y1="84" x2="188" y2="75"/><polygon class="cls-2" points="188.62 98 181.87 98 181.87 98 188.62 98 188.62 98"/><line class="cls-2" x1="188" y1="98" x2="188" y2="90"/><polygon class="cls-2" points="188.62 111 181.87 111 181.87 111 188.62 111 188.62 111"/><line class="cls-2" x1="188" y1="111" x2="188" y2="102"/><polyline class="cls-2" points="190 125 190 115 210 115 210 125"/><polyline class="cls-2" points="218.71 52.35 225 61.05 225 125"/><polyline class="cls-2" points="49 112 49 133 60 133 60 112"/><polyline class="cls-2" points="39.08 111.51 55.49 95.1 72.48 112.09"/><polyline class="cls-2" points="42.03 71.95 54.29 59.69 67.87 73.27"/><polyline class="cls-2" points="40.99 91.87 56.15 76.71 69.54 90.11"/><rect class="cls-2" x="24" y="17" width="207" height="127"/><polyline class="cls-3" points="72 49 108 84 204 8"/>
+        </svg>
+    </div>
+</div><!-- 効率的に /.efficiency" -->
+
+<div id="handbook" class="getacross clearfix">
+    <h3 class="fadein">「伝わりやすい表記とは何か?」</h3>
+    <div class="getacross_bg">
+<!--         <img src="images/svg/tellmoji.svg" width="350" alt=""> -->
+
+<!-- 以下は「伝える文字」のアニメーション -->
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="layer1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 345 360" style="enable-background:new 0 0 345 360;" xml:space="preserve">
+<style type="text/css">
+    .st0{fill:#61AA1A; animation-iteration-count: 3;}
+    .st1{fill:#FFFFFF;stroke:#61AA1A;stroke-width:2;stroke-miterlimit:10;animation-iteration-count: 3;}
+</style>
+<g>
+    <path class="st0" d="M228.9,36.4c14.2-6.6,32.1-20.7,45.3-36.2L285.9,8c-0.9,0.8-2.2,1-5.3-0.2c-5.8,5.5-12.2,10.5-18.7,14.9l4.1,3
+        c-0.7,0.7-2.1,0.9-4.4,0.2L241,81.1c-0.3,0.4-4.2,0.7-7.3-0.4l-1.5-0.6l19-50.8c-6.9,3.7-13.9,6.7-20.8,8.7L228.9,36.4z
+         M338.3,59.9l8.9,9.9c-1.5,1-3,1-6.5-0.3l-42.8-16l7.7,4.9c-0.8,0.9-2.4,0.8-5.3-0.4c-8.1,6.7-20.5,15.9-31.2,23.1
+        c13.7,4.3,31.7,9.8,50.6,15.7c-1.9-7.4-5.1-15.3-8.4-21.4l1.7-0.2c16.5,17.5,19.1,29.7,17,35.3c-1.1,3-3.6,4.1-6,3.2
+        c-1.1-0.4-2.2-1.2-3.1-2.6c0.6-3.4,0.2-7.6-0.7-12c-15.3-3.2-35.6-7.8-63.1-14.3c-1.1,0.8-2.6,1-3.9,0.7l-2.1-10.3
+        c3.6,1.2,8.5,2.8,14.5,4.8c8.4-8.6,19-20.2,26.3-28.8l-26.3-9.8l0.1-2.5l64.7,24.1L338.3,59.9z M349.3,39.5c-1.5,1-3,1-6.4-0.2
+        l-58.3-21.8l-0.1-2.5L332.7,33l7.9-3.2L349.3,39.5z"/>
+    <path class="st0" d="M257.7,170.4c-2.2,5.8-0.9,8.4,8,11.7c7.6,2.8,9.6,3.5,12,4c1.5,0.4,3.3,0.5,4.8,1.1c1.1,0.4,6.4,4.2,5.5,6.8
+        c-0.9,2.4-8,0-19.7-4.3c-16.6-6.2-20.8-13-17.4-22.2c0.2-0.6,1.8-4,2-4.7c2.4-6.4,0.4-8.6-4.1-10.3c-5.8-2.2-21.8-2.5-42.6,8.6
+        c-3.7,1.9-5.4,2.9-8.1,1.9c-2.7-1-3.8-2.9-3.1-5c1.5-3.9,6.1-4.4,12.5-6.1c10.4-2.7,38.1-10.4,61.1-17.7c0.8-0.3,1.3-0.5,1.4-0.7
+        c0-0.1-0.1-0.2-0.4-0.4c-1.2-0.5-29.7-6.3-36.8-6.2c-2.4,0.1-3.9,0.8-5.5,0.2c-3.7-1.4-7.5-6.5-6.2-10.1c0.9-2.4,5-4.1,9.1-4.2
+        l0.9,1.4c-1.8,0.7-3.1,1.5-3.5,2.6c-0.5,1.3,0.6,2.8,4.2,4.1c5.8,2.2,29.8,7.4,38.3,8.9c2.4,0.5,4.7-1,6.3-0.4
+        c3.2,1.2,8.6,7.1,7.8,9.1c-0.5,1.3-3.8,0.7-6.9,0.3c-6.5-0.7-39.1,9.3-40.3,9.6l0.5,0.3c6.9-0.5,11.9,0.4,15.7,1.8
+        c7,2.6,9.3,7.4,6.5,15L257.7,170.4z M267,114.5c-1.8-0.6-3.5-1.1-5.1-1.7c-11.2-4.2-18-9.6-19-15.3l2.6-0.3
+        c1.8,3.5,6.7,6.8,14.7,9.8c6.2,2.3,12.4,3.7,15.6,4.9c6.9,2.6,9.2,6.6,8.5,8.5c-0.8,2.2-6.2-0.2-10.7-1.5
+        c-6.6-1.8-16.8-2.7-24.2-3.2l-0.3-1.9c4.6,0.4,13.4,0.8,17.8,0.8L267,114.5z"/>
+    <path class="st0" d="M199.4,228.1c11.1-0.4,23.7,1.1,32.8,4.5c24.2,9,28.3,21.8,24.3,32.6c-4.6,12.4-22.9,16.7-48.5,7.2
+        c-14.9-5.6-22.9-14.5-20.6-20.8c2.1-5.7,10.8-8,22-3.9c11.6,4.3,20.5,15.4,17.9,22.4c-0.3,0.7-0.8,1.3-1.3,1.5
+        c10.1,1.2,19.3-3.1,21.8-9.8c3.8-10.2-0.1-20.1-17.6-26.6c-8.4-3.1-33.1-7.9-51.3,1.7c-2.3,1.2-4.8,2.8-7.6,1.8
+        c-2.3-0.9-3.3-3.8-2.8-5.4c1.1-2.9,6.2-3.9,8.9-4.6c13-3.6,45.6-13,64.2-18.3c1.2-0.3,1.8-0.6,1.9-0.9c0.1-0.4-0.3-0.6-1.1-0.9
+        c-2.2-0.8-23.6-5.5-30.9-5.8c-3.3-0.1-3.9,0.8-6.4-0.1c-5.5-2.1-9.2-8.5-7.8-12.3c0.5-1.3,1.7-2.8,4.8-3l0.5,0.5
+        c-1.5,2.8,0.4,5.9,4.6,7.5c7.6,2.8,29.6,8.3,34.9,9c2.3,0.2,4.6-1.2,6-0.7c4.9,1.8,9.6,8.4,8.9,10.4c-0.8,2.3-4.4,0.5-9.8,1.4
+        c-16.7,2.7-36.7,8.2-48.4,11.9L199.4,228.1z M210.1,267.8c3,1.1,6.3,2.2,9.5,2.8c-0.3-0.6-0.6-1.3-0.5-2.1
+        c1.6-6.5-3.9-15-12.6-18.2c-6.2-2.3-12.1-1.5-13.6,2.6C190.7,258.9,201,264.4,210.1,267.8z"/>
+</g>
+<g>
+    <path class="st1" d="M72,113.3c14.2-6.6,32.1-20.7,45.3-36.1l11.7,7.8c-0.9,0.8-2.2,1-5.3-0.2c-5.8,5.5-12.2,10.5-18.7,14.9l4.1,3
+        c-0.7,0.7-2.1,0.9-4.4,0.2L84.1,158c-0.3,0.4-4.2,0.7-7.3-0.4l-1.5-0.6l19-50.8c-6.9,3.7-13.9,6.7-20.8,8.7L72,113.3z M181.4,136.8
+        l8.9,9.9c-1.5,1-3,1-6.5-0.3l-42.8-16l7.7,4.9c-0.8,1-2.4,0.8-5.3-0.4c-8.1,6.7-20.5,15.9-31.2,23.1c13.7,4.3,31.7,9.8,50.7,15.7
+        c-1.9-7.4-5.1-15.3-8.4-21.4l1.7-0.2c16.5,17.5,19.1,29.7,17,35.3c-1.1,3-3.6,4.1-6,3.2c-1.1-0.4-2.2-1.2-3.1-2.6
+        c0.6-3.4,0.2-7.6-0.7-12c-15.3-3.2-35.6-7.8-63.1-14.3c-1.1,0.8-2.6,1-3.9,0.7l-2.1-10.3c3.6,1.2,8.5,2.8,14.5,4.8
+        c8.4-8.6,19-20.2,26.3-28.8l-26.3-9.8l0.1-2.4l64.7,24.1L181.4,136.8z M192.4,116.4c-1.5,1-3,1-6.4-0.2l-58.3-21.8l-0.1-2.5
+        l48.1,17.9l7.9-3.2L192.4,116.4z"/>
+    <path class="st1" d="M77.6,173.1c1.5-1.5,4.2-1.8,7.1-0.7c5,1.9,11.2,7.1,10,10.3c-0.7,1.8-3.6,2.9-5.1,5.7c-0.5,1-1.5,2.1-2,3.2
+        c3.6,2,6.1,5,5.6,6.4c-0.7,2-4,1.6-6.8,2.7c-2,0.7-3.6,1.7-4.7,2.2c-0.9,1.6-1.5,2.9-2.2,4.3c14.6-2,31.6-0.4,41.9,3.4
+        c20.4,7.6,29,20,23.1,35.7l0,0.1c-5.4,14.5-26.3,17-62,6.9l-0.1-2.5c29.5,7,49.1,4.2,53.7-8.2c4.4-11.8-0.1-22.2-16.1-28.5
+        c-11.1-4.1-27.4-5.6-42.3-2.8c-1.2,2.9-2.5,6-3.6,8.9c-2.2,6.2-4.7,12.3-5.6,16.6c-0.7,3.8-1.9,8-2.6,10c-1,2.6-4.4,4.2-8.2,2.8
+        c-2.1-0.8-2.9-3.1-1.8-6.1c1.6-4.2-0.5-11.3-3.8-18.8l2.3-0.5c2.4,4.6,5.8,10.5,6.2,10.7c0.9,0.3,1.3-0.8,4.9-10.6
+        c1.2-3.2,2.8-7.5,4.7-11.9c-5.5,1.5-12.4,2.7-17.4,5.1c-6.1,2.7-8.3,4.1-10.7,3.2c-2.3-0.9-3.3-3.3-2.5-5.3c1.4-3.6,4.8-3.4,8.2-4
+        c15.4-2.5,24.2-5.4,26.4-8.1c1.4-3.3,2.3-5.4,3.7-8.3c-3.7-0.6-8.4-0.9-10.8-1c-2.2,0-4.4,0.5-6.1-0.1c-4.4-1.7-6.8-7.6-6.1-9.6
+        c0.7-1.8,1.7-2.7,3.3-3.1l0.6,0.2c-0.7,2.2,1,5.3,4.8,6.7c5.4,2,14.6,2.9,16.2,2.7c0.7-1.4,3.9-8.3,4.3-9.1
+        c1.7-4.6-2.6-7.3-6.4-8.3L77.6,173.1z"/>
+    <path class="st1" d="M42.5,305c11.1-0.4,23.7,1.1,32.8,4.5c24.2,9,28.3,21.8,24.3,32.6c-4.6,12.4-22.9,16.7-48.5,7.2
+        c-14.9-5.6-22.9-14.5-20.6-20.8c2.1-5.7,10.8-8,22-3.9c11.6,4.3,20.5,15.4,17.9,22.4c-0.3,0.7-0.8,1.3-1.3,1.5
+        c10.1,1.2,19.3-3.1,21.8-9.8c3.8-10.2-0.1-20.1-17.6-26.6c-8.4-3.1-33.1-7.9-51.3,1.7c-2.3,1.2-4.8,2.8-7.6,1.8
+        c-2.3-0.9-3.3-3.8-2.8-5.4c1.1-2.9,6.2-3.9,8.9-4.6c13-3.6,45.6-13,64.2-18.3c1.2-0.3,1.8-0.6,1.9-0.9c0.1-0.4-0.3-0.6-1.1-0.9
+        c-2.2-0.8-23.6-5.5-30.9-5.8c-3.3-0.1-3.9,0.8-6.4-0.1c-5.5-2.1-9.2-8.5-7.8-12.3c0.5-1.3,1.7-2.8,4.8-3l0.5,0.5
+        c-1.5,2.8,0.4,5.9,4.6,7.5c7.6,2.8,29.6,8.3,34.9,9c2.3,0.2,4.6-1.2,6-0.7c4.9,1.8,9.6,8.4,8.9,10.4c-0.8,2.3-4.4,0.5-9.8,1.4
+        c-16.7,2.7-36.7,8.2-48.4,11.9L42.5,305z M53.2,344.7c3,1.1,6.3,2.2,9.5,2.8c-0.3-0.6-0.6-1.3-0.5-2.1c1.6-6.5-3.9-15-12.6-18.2
+        c-6.2-2.3-12.1-1.5-13.6,2.6C33.8,335.8,44.1,341.3,53.2,344.7z"/>
+</g>
+</svg>
+
+    </div><!-- /. getacross_bg -->
+    <div id="tell" class="tell fadein">
+         <p>このサービスでは、共同通信社「新聞用字用語集 記者ハンドブック」に基づく表記チェックのプログラムを使い、表記の統一、校正を行っています。「新聞でどう表記されているか」は、説得力のある判断基準の一つです。</p>
+        <p>※株式会社共同通信社は、全国の新聞社などにニュースを配信している<br>「一般社団法人共同通信社」の関連会社です。</p>
+        <p class="btn_tell1"><a href="https://www.kyodo.co.jp/books/isbn/978-4-7641-0687-1/">記者ハンドブックとは<i class="fas fa-external-link-alt"></i></a></p>
+
+        <p class="btn_tell1"><a href="https://suzumi-ya.com/epub/post-2044/">もじかえる運営者のブログ<br>「記者ハンドブックを使う」<i class="fas fa-caret-right"></i></a></p>
+        <p><a href="#" class="btn_tell2">もじかえるの仕様をもっとくわしく<i class="fas fa-caret-right"></i></a></p>
+    </div><!-- /.tell -->
+
+</div><!-- 伝わる/.getacross -->
+
+
+<div class="chargetitle">
+    <h2 class="black_h2 black_h2img">もっと<br>専門的に</h2>
+     <div class="triangle2"><p class="triangle2_b"></p>
+     </div>
+</div><!-- 有料タイトル/.chargetitle -->
+<div class="wrap">
+    <div class="top_cahargeplan">
+        <div class="charge_tt fadein">
+            <h3>有料プランのご案内</h3>
+            <p>無料プランでも十分にお使いいただけます。<br>専門分野に特化した機能をご希望の方は、こちらがオススメです。</p>
+        </div><!-- /.carge_tt -->
+        <ul>
+            <li class="charge_cus clearfix fadein">
+                <p class="chargeIcon"><img src="images/svg/custom.svg" width="100" alt="校正ツールのカスタマイズ設定機能のアイコン"></p>
+                <h4>充実のカスタマイズ機能</h4>
+                <p>○オリジナル表記リストに基づく文字校正</p>
+                <p>○テクニカルターム（医学用語など）の照合</p>
+                <p>○不快表現等の指摘</p>
+                <p>○表記ゆれの指摘  ・・・ほか多数の追加機能</p>
+            </li><!-- charge_cus -->
+            <li class="charge_supp fadein">
+                <p class="chargeIcon"><img src="images/svg/helpsupp.svg" width="80" alt="校正ツールのカスタマイズ設定機能のアイコン"></p>
+                <h4>追加サポート</h4>
+                <p>○データコンペア（2つの文章を比較）</p>
+                <p>○校正者による誤字脱字のチェック</p>
+                <p>○校閲者／校正者の紹介 など</p>
+            </li><!-- charge_supp -->
+        </ul>
+        <p class="btn_center"><a href="#" class="btn_orange">詳しいご利用のながれについてはこちら</a></p>
+    </div><!-- /.top_cahargeplan -->
+</div><!-- /.wrap -->
+
+<div class="support_bg">
+    <div class="support_t fadein">
+        <h2>分からない、困ったときは、<span class="br">
+    いつでもお問い合わせください</span><span class="br">
+    全力でご対応させていただきます</span></h2>
+        <a href="contact.html" class="contact_btn"><i class="fas fa-envelope"></i>お問い合わせ</a>
+        <a href="#" class="contact_btn"><i class="fas fa-question-circle"></i>よくある質問</a>
+    </div><!-- /.support_t -->
+</div><!-- /.support_bg-->
+
+<div id="info_t" class="info_t clearfix">
+    <h2>もじかえるからのお知らせ</h2>
+    <dl>
+        <dt><a href="#"><span>NEW</span> 2018年11月1日</a></dt>
+        <dd><a href="#">もじかえる サイトオープン</a></dd>
+        <dt><a href="#"><span>NEW</span> 2018年11月1日</a></dt>
+        <dd><a href="#">【予告】『もじかえるオープンキャンペーン』 を開催予定です</a></dd>
+        <dt ><a href="#"><span class="new">NEW </span>2018年11月5日</a></dt>
+        <dd><a href="#">早くもフリープランが＠＠＠PV ご利用ありがとうございます！</a></dd>
+    </dl>
+    <p class="infolist"><a href="#">お知らせ一覧へ</a></p>
+</div><!-- /.info_t -->
+
+
+<div class="btn_bottom">
+    <a href="#" class="btn_hero">まずは、登録不要のフリープランをお試し</a>
+</div>
+</main>
+
+<fooer>
+    <nav class="footer_nav">
+        <ul>
+            <li><a href="#">もじかえる運営者ブログ</a></li>
+            <li><a href="#">よくある質問</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li class="sns_btn"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="sns_btn"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        </ul>
+        <p><a href="#"><img src="images/svg/logo02.svg" width="250" alt="もじかえるのロゴ"></a></p>
+    </nav><!-- /.fooer nav -->
+    </nav>
+    <small><p>copyright &copy; Mojikaeru 2018</p></small>
+<div id="js-pageTop" class="pagetop"></div><!-- トップへ戻るボタンの設置 -->
+</fooer>
+</div><!-- /.l-content -->
+
+
+</body>
+</html>
